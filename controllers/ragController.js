@@ -12,6 +12,8 @@ async function initializeNearbyyClient() {
   });
 }
 
+// https://nearbyy.com/
+
 const nearbyyPromise = initializeNearbyyClient();
 
 async function getContextResponse(req, res) {
