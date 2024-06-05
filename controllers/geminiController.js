@@ -11,8 +11,8 @@ async function getResponseChatGemini(req, res) {
     const text = response.text();
     return res.json({ response: text });
   } catch (error) {
-    console.error('Error en la comunicacion con la api', error);
-    res.status(500).send(error);
+    console.log(error);
   }
 }
+
 module.exports = { getResponseChatGemini };
